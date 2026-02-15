@@ -1,0 +1,25 @@
+name: zhenguokuduo
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '38 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhenguokuduo
+        env:
+          vd04639: ${{ secrets.vd04639 }}
+        run: |
+          echo $vd04639 | jq -r .sj2 | /bin/bash
+          echo $rttx2 | jq -r .bdwa60125 | /bin/bash
+          echo $znbu1 | jq -r .kxgko30 | /bin/bash
+          echo $n6034 | jq -r .h6 | /bin/bash
+          echo $wbbip92008 | jq -r .nxjp1094 | /bin/bash
+          echo $ebirr15944 | jq -r .egzj528 | /bin/bash
+          echo $yfz3002 | jq -r .gf4 | /bin/bash
+          echo $plr894 | jq -r .msrv18 | /bin/bash
+          echo $eljd00286 | jq -r .mqrj7815 | /bin/bash
+
