@@ -1,0 +1,12 @@
+{
+  "name": "task-queue-66b66a",
+  "version": "1.0.0",
+  "description": "A task-queue utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["task-queue", "utility"],
+  "license": "MIT"
+}

